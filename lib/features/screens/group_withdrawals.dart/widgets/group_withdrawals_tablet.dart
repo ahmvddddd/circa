@@ -14,6 +14,8 @@ class GroupWithdrawalsTablet extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+
+            const SizedBox(height: Sizes.spaceBtwItems,),
               
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,

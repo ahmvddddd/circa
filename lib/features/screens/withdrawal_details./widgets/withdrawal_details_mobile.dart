@@ -24,6 +24,8 @@ class WithdrawalDetailsMobile extends StatelessWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+
+                    const SizedBox(height: Sizes.spaceBtwItems,),
                     WithdrawalCard(
                       padding: const EdgeInsets.all(0),
                       child: Column(

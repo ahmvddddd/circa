@@ -18,6 +18,8 @@ class GroupLedgerDesktop extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  
+                  const SizedBox(height: Sizes.spaceBtwItems,),
                   GroupLedgerDesktopCard(
                     transactionId: "TXN-${DateTime.now().millisecondsSinceEpoch}",
                     groupAccount: "GRP-12839",

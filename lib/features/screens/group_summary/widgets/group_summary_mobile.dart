@@ -19,6 +19,8 @@ class GroupSummaryMobile extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+
+                  const SizedBox(height: Sizes.spaceBtwItems,),
                   Row(
                     children: [
                       StatCard(title: "Balance", value: "\u20A61,234.56"),

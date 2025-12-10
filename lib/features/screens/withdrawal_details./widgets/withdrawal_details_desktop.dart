@@ -22,6 +22,7 @@ class WithdrawalDetailsDesktop extends StatelessWidget {
                 child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                    const SizedBox(height: Sizes.spaceBtwItems,),
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [

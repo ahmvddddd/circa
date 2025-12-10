@@ -28,7 +28,7 @@ class CustomAppbar extends ConsumerWidget implements PreferredSizeWidget {
                 icon: Icon(
                   Icons.menu_outlined,
                   color: CustomColors.primary,
-                  size: Sizes.iconM,
+                  size: Sizes.iconMd,
                 ),
               )
             : null,

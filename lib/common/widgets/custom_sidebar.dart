@@ -5,7 +5,6 @@ import '../../../utils/constants/custom_colors.dart';
 import '../../../utils/constants/sizes.dart';
 import '../../routing/router_controller.dart';
 import '../../utils/helpers/helper_function.dart';
-import '../custom_shapes.dart/containers/rounded_container.dart';
 import 'sidebar_widget.dart';
 
 class CustomSideBar extends ConsumerWidget {
@@ -16,19 +15,6 @@ class CustomSideBar extends ConsumerWidget {
     final currentRoute = ref.watch(currentRouteProvider);
     final dark = HelperFunction.isDarkMode(context);
     final menuItems = [
-      // {'label': 'Dashboard', 'icon': Icons.dashboard, 'route': '/dashboard'},
-      // {'label': 'Users', 'icon': Icons.people, 'route': '/users'},
-      // {'label': 'Jobs', 'icon': Icons.work, 'route': '/jobs'},
-      // {
-      //   'label': 'Notifications',
-      //   'icon': Icons.notifications,
-      //   'route': '/notifications',
-      // },
-      // {
-      //   'label': 'Group Ledger',
-      //   'icon': Icons.document_scanner,
-      //   'route': '/ledger',
-      // },
       {'label': 'My Groups', 'icon': Icons.groups, 'route': '/mygroups'},
       {
         'label': 'Group Summary',
@@ -77,20 +63,6 @@ class CustomSideBar extends ConsumerWidget {
                   children: [
                     Column(
                       children: [
-                        RoundedContainer(
-                          backgroundColor: CustomColors.primary,
-                          radius: 100,
-                          height: 50,
-                          width: 50,
-                          padding: const EdgeInsets.all(Sizes.sm),
-                          child: Center(
-                            child: Text(
-                              'Logo',
-                              style: Theme.of(context).textTheme.labelSmall!
-                                  .copyWith(color: Colors.white),
-                            ),
-                          ),
-                        ),
                         const SizedBox(height: Sizes.spaceBtwSections),
 
                         const SizedBox(height: Sizes.spaceBtwSections),
