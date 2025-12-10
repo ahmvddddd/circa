@@ -1,7 +1,6 @@
 import 'package:circa/utils/constants/custom_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:iconsax/iconsax.dart';
 import '../../../utils/constants/sizes.dart';
 import '../../../utils/device/device_utility.dart';
 import '../../features/controllers/theme_controller.dart';
@@ -52,7 +51,7 @@ class CustomAppbar extends ConsumerWidget implements PreferredSizeWidget {
             padding: const EdgeInsets.only(right: 8.0),
             child: CircleAvatar(
               radius: 13,
-              child: Icon(Iconsax.user, size: Sizes.iconM),
+              child: Icon(Icons.person, size: Sizes.iconM),
             ),
           ),
         ],

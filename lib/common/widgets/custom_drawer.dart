@@ -41,47 +41,49 @@ class CustomDrawer extends ConsumerWidget {
           right: BorderSide(color: CustomColors.darkGrey, width: 0.3),
         ),
       ),
-      child: Drawer(
-        width: responsiveSize(context, 320),
-        backgroundColor: dark
-            ? CustomColors.darkBackground
-            : CustomColors.lightBackground,
-        shape: BeveledRectangleBorder(),
-        child: Padding(
-          padding: const EdgeInsets.all(Sizes.sm),
-          child: Column(
-            children: [
-              const SizedBox(height: Sizes.spaceBtwItems),
-              RoundedContainer(
-                backgroundColor: CustomColors.primary,
-                radius: 100,
-                height: 50,
-                width: 50,
-                padding: const EdgeInsets.all(Sizes.sm),
-                child: Center(
-                  child: Text(
-                    'Logo',
-                    style: Theme.of(
-                      context,
-                    ).textTheme.labelSmall!.copyWith(color: Colors.white),
+      child: SingleChildScrollView(
+        child: Drawer(
+          width: responsiveSize(context, 320),
+          backgroundColor: dark
+              ? CustomColors.darkBackground
+              : CustomColors.lightBackground,
+          shape: BeveledRectangleBorder(),
+          child: Padding(
+            padding: const EdgeInsets.all(Sizes.sm),
+            child: Column(
+              children: [
+                const SizedBox(height: Sizes.spaceBtwItems),
+                RoundedContainer(
+                  backgroundColor: CustomColors.primary,
+                  radius: 100,
+                  height: 50,
+                  width: 50,
+                  padding: const EdgeInsets.all(Sizes.sm),
+                  child: Center(
+                    child: Text(
+                      'Logo',
+                      style: Theme.of(
+                        context,
+                      ).textTheme.labelSmall!.copyWith(color: Colors.white),
+                    ),
                   ),
                 ),
-              ),
-              const SizedBox(height: Sizes.spaceBtwSections),
-
-              for (final item in menuItems)
-                _SidebarItem(
-                  icon: item['icon'] as IconData,
-                  label: item['label'] as String,
-                  route: item['route'] as String,
-                  isActive: currentRoute == item['route'],
-                  onTap: () {
-                    ref.read(currentRouteProvider.notifier).state =
-                        item['route'] as String;
-                    context.go(item['route'] as String);
-                  },
-                ),
-            ],
+                const SizedBox(height: Sizes.spaceBtwSections),
+        
+                for (final item in menuItems)
+                  _SidebarItem(
+                    icon: item['icon'] as IconData,
+                    label: item['label'] as String,
+                    route: item['route'] as String,
+                    isActive: currentRoute == item['route'],
+                    onTap: () {
+                      ref.read(currentRouteProvider.notifier).state =
+                          item['route'] as String;
+                      context.go(item['route'] as String);
+                    },
+                  ),
+              ],
+            ),
           ),
         ),
       ),

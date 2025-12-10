@@ -1,11 +1,11 @@
 {
-    "name": "circa",
-    "short_name": "circa",
+    "name": "myapp",
+    "short_name": "myapp",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Community wallet for controlled transactions.",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

@@ -15,7 +15,7 @@ class TAppTheme {
 
   static ThemeData lightTheme = ThemeData(
     useMaterial3: true,
-    fontFamily: 'Aonik',
+    fontFamily: 'Poppins',
     brightness: Brightness.light,
     primaryColor: Colors.grey,
     scaffoldBackgroundColor: CustomColors.lightBackground,
@@ -31,7 +31,7 @@ class TAppTheme {
 
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
-    fontFamily: 'Aeonik',
+    fontFamily: 'Poppins',
     brightness: Brightness.dark,
     primaryColor: Colors.grey,
     scaffoldBackgroundColor: CustomColors.darkBackground,
