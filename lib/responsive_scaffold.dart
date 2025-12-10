@@ -35,6 +35,7 @@ class ResponsiveScaffold extends StatelessWidget {
         // Tablet < 1024px
         else if (DeviceUtils.isTabletScreen(context)) {
           return Scaffold(
+            key: scaffoldKey,
             appBar: CustomAppbar(title: title),
             drawer: CustomDrawer(), // still use drawer
             body: tabletBody,

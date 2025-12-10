@@ -3,7 +3,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../../../utils/constants/custom_colors.dart';
 import '../../../utils/constants/sizes.dart';
-import '../../routing/router_controller.dart';
 import '../../utils/helpers/helper_function.dart';
 import 'sidebar_widget.dart';
 
@@ -12,7 +11,8 @@ class CustomSideBar extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final currentRoute = ref.watch(currentRouteProvider);
+    final currentRoute = GoRouterState.of(context).uri.toString();
+
     final dark = HelperFunction.isDarkMode(context);
     final menuItems = [
       {'label': 'My Groups', 'icon': Icons.groups, 'route': '/mygroups'},
@@ -73,8 +73,6 @@ class CustomSideBar extends ConsumerWidget {
                             route: item['route'] as String,
                             isActive: currentRoute == item['route'],
                             onTap: () {
-                              ref.read(currentRouteProvider.notifier).state =
-                                  item['route'] as String;
                               context.go(item['route'] as String);
                             },
                           ),

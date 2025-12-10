@@ -28,7 +28,8 @@ class CustomAppbar extends ConsumerWidget implements PreferredSizeWidget {
                 icon: Icon(
                   Icons.menu_outlined,
                   color: CustomColors.primary,
-                  size: Sizes.iconMd,
+                  size: DeviceUtils.isTabletScreen(context)
+                  ? Sizes.iconLg : Sizes.iconMd,
                 ),
               )
             : null,
@@ -42,7 +43,8 @@ class CustomAppbar extends ConsumerWidget implements PreferredSizeWidget {
               themeMode == ThemeMode.dark
                   ? Icons.dark_mode
                   : Icons.dark_mode_outlined,
-              size: Sizes.iconM,
+              size: DeviceUtils.isTabletScreen(context)
+                  ? Sizes.iconLg : Sizes.iconM,
             ),
           ),
 
@@ -51,7 +53,9 @@ class CustomAppbar extends ConsumerWidget implements PreferredSizeWidget {
             padding: const EdgeInsets.only(right: 8.0),
             child: CircleAvatar(
               radius: 13,
-              child: Icon(Icons.person, size: Sizes.iconM),
+              child: Icon(Icons.person, 
+              size: DeviceUtils.isTabletScreen(context)
+                  ? Sizes.iconLg : Sizes.iconM,),
             ),
           ),
         ],
