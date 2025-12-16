@@ -1,4 +1,4 @@
-import 'package:circa/common/widgets/custom_appbar.dart';
+import 'package:circa/common/appbars/custom_appbar.dart';
 import 'package:flutter/material.dart';
 import '../../../../common/widgets/filter_row.dart';
 import '../../../../common/widgets/group_withdrawal_list_card.dart';

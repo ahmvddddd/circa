@@ -4,7 +4,7 @@ import 'package:go_router/go_router.dart';
 import '../../../utils/constants/custom_colors.dart';
 import '../../../utils/constants/sizes.dart';
 import '../../utils/helpers/helper_function.dart';
-import 'sidebar_widget.dart';
+import '../widgets/sidebar_widget.dart';
 
 class CustomSideBar extends ConsumerWidget {
   const CustomSideBar({super.key});

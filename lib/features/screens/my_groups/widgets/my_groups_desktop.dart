@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../../common/widgets/custom_appbar.dart';
+import '../../../../common/appbars/custom_appbar.dart';
 import '../../../../common/widgets/group_tile.dart';
 import '../../../../utils/constants/sizes.dart';
 

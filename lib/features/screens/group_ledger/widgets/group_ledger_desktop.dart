@@ -1,4 +1,4 @@
-import 'package:circa/common/widgets/custom_appbar.dart';
+import 'package:circa/common/appbars/custom_appbar.dart';
 import 'package:flutter/material.dart';
 import '../../../../common/widgets/group_ledger_desktop_card.dart';
 import '../../../../utils/constants/sizes.dart';

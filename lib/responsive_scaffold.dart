@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import '../../utils/device/device_utility.dart';
-import 'common/widgets/custom_appbar.dart';
-import 'common/widgets/custom_drawer.dart';
-import 'common/widgets/custom_sidebar.dart';
+import 'common/appbars/custom_appbar.dart';
+import 'common/appbars/custom_drawer.dart';
+import 'common/appbars/custom_sidebar.dart';
 
 class ResponsiveScaffold extends StatelessWidget {
   final Widget mobileBody;
