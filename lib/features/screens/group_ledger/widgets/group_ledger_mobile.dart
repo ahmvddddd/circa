@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../../common/widgets/group_ledger_mobile_card.dart';
+import '../../../../common/widgets/groups/group_ledger_mobile_card.dart';
 import '../../../../utils/constants/sizes.dart';
 
 class GroupLedgerMobile extends StatelessWidget {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../common/appbars/custom_appbar.dart';
-import '../../../../common/widgets/group_tile.dart';
+import '../../../../common/widgets/groups/group_tile.dart';
 import '../../../../utils/constants/sizes.dart';
 
 class MyGroupsDesktop extends StatelessWidget {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../common/widgets/filter_row.dart';
-import '../../../../common/widgets/group_withdrawal_list_card.dart';
+import '../../../../common/widgets/groups/group_withdrawal_list_card.dart';
 import '../../../../utils/constants/sizes.dart';
 
 class GroupWithdrawalsTablet extends StatelessWidget {

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../../utils/constants/custom_colors.dart';
-import '../../utils/constants/sizes.dart';
-import '../../utils/helpers/helper_function.dart';
-import '../custom_shapes.dart/containers/rounded_container.dart';
+import '../../../utils/constants/custom_colors.dart';
+import '../../../utils/constants/sizes.dart';
+import '../../../utils/helpers/helper_function.dart';
+import '../../custom_shapes.dart/containers/rounded_container.dart';
 
 class GroupLedgerDesktopCard extends StatelessWidget {
   final String transactionId;

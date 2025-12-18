@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../common/widgets/group_tile.dart';
+import '../../../../common/widgets/groups/group_tile.dart';
 import '../../../../utils/constants/sizes.dart';
 
 class MyGroupsMobile extends StatelessWidget {
