@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../utils/helpers/helper_function.dart';
+import '../../../utils/helpers/helper_function.dart';
 
 class StatCard extends StatelessWidget {
   final String value;

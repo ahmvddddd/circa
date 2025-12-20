@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../../common/appbars/custom_appbar.dart';
-import '../../../../common/widgets/stat_card.dart';
-import '../../../../common/widgets/status_card.dart';
+import '../../../../common/widgets/stat/stat_card.dart';
+import '../../../../common/widgets/stat/status_card.dart';
 import '../../../../utils/constants/sizes.dart';
 import '../../../../utils/helpers/helper_function.dart';
 
