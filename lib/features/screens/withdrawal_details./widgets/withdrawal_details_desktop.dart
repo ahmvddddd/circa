@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../../common/custom_shapes.dart/containers/rounded_container.dart';
 import '../../../../common/appbars/custom_appbar.dart';
-import '../../../../common/widgets/withdarawal_details_row.dart';
+import '../../../../common/widgets/withdrawal/withdarawal_details_row.dart';
 import '../../../../common/widgets/withdrawal_approval_card.dart';
 import '../../../../common/widgets/withdrawal_card.dart';
 import '../../../../utils/constants/sizes.dart';
