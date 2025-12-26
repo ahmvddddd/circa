@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '../../utils/constants/sizes.dart';
-import '../../utils/helpers/helper_function.dart';
-import '../custom_shapes.dart/containers/rounded_container.dart';
+import '../../../utils/constants/sizes.dart';
+import '../../../utils/helpers/helper_function.dart';
+import '../../custom_shapes.dart/containers/rounded_container.dart';
 
 class WithdrawalApprovalCard extends StatelessWidget {
   final String name;
