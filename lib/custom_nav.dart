@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import 'features/screens/group_summary/group_summary.dart';
+import 'features/screens/group_withdrawals.dart/group_withdrawals.dart';
+import 'features/screens/my_groups/my_groups.dart';
+
 // --- MOCK UTILS (Replace these with your actual imports) ---
 class CustomColors {
   static const primary = Colors.blue;
@@ -34,7 +38,7 @@ final routerProvider = Provider<GoRouter>((ref) {
             routes: [
               GoRoute(
                 path: '/home',
-                builder: (context, state) => const Center(child: Text('Home Screen')),
+                builder: (context, state) => const MyGroupsStaticPage(),
               ),
             ],
           ),
@@ -43,7 +47,7 @@ final routerProvider = Provider<GoRouter>((ref) {
             routes: [
               GoRoute(
                 path: '/favorites',
-                builder: (context, state) => const Center(child: Text('Favorites Screen')),
+                builder: (context, state) => const GroupSummaryScreen(),
               ),
             ],
           ),
@@ -52,7 +56,7 @@ final routerProvider = Provider<GoRouter>((ref) {
             routes: [
               GoRoute(
                 path: '/profile',
-                builder: (context, state) => const Center(child: Text('Profile Screen')),
+                builder: (context, state) => GroupWithdrawals(),
               ),
             ],
           ),
@@ -77,7 +81,7 @@ class MyApp extends ConsumerWidget {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       routerConfig: router,
-      theme: ThemeData.light(),
+      theme: ThemeData.dark(),
       darkTheme: ThemeData.dark(),
     );
   }
