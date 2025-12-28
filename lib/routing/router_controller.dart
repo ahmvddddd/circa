@@ -30,7 +30,7 @@ final routerProvider = Provider<GoRouter>((ref) {
       ),
       GoRoute(
         path: '/groupwithdrawals',
-        builder: (context, state) =>  GroupWithdrawals(),
+        builder: (contexttate) =>  
       ),
       GoRoute(
         path: '/withdrawaldetails',
